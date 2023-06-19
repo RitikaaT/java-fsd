@@ -1,0 +1,53 @@
+#No arguments constructor
+
+class Main {
+
+  int i;
+
+  private Main() {
+    i = 90;
+    System.out.println("Constructor is called");
+  }
+
+  public static void main(String[] args) {
+
+    Main obj = new Main();
+    System.out.println("Value of i: " + obj.i);
+  }
+}
+
+#Parameterized constructor
+
+class Main {
+
+  String surname;
+
+  Main(String sur) {
+    surname = sur;
+    System.out.println(surname + " Mathhew");
+  }
+
+  public static void main(String[] args) {
+
+    
+    Main obj1 = new Main("Kyathi");
+    Main obj2 = new Main("John");
+    Main obj3 = new Main("Ron");
+  }
+}
+
+#Default constructor
+
+class Main {
+
+  int a;
+  boolean b;
+
+  public static void main(String[] args) {
+    Main obj = new Main();
+
+    System.out.println("Default Value is:");
+    System.out.println("a = " + obj.a);
+    System.out.println("b = " + obj.b);
+  }
+}
