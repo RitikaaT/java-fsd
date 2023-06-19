@@ -1,0 +1,21 @@
+#Calling method with static keyword
+
+public class Main{
+	static void method(){
+		System.out.println("Called method");
+	}
+	public static void main(String[] args){
+		method();
+	}
+}
+
+#Calling method with instance method
+
+public class Main{
+	void method(){
+		System.out.println("Called method");
+	}
+	public static void main(String[] args){
+		new Main().method();
+	}
+}
