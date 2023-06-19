@@ -1,0 +1,93 @@
+#Private access modifier
+class pvt{
+	private A (){}
+	void msg(){
+		system.out.println("ABCD");
+	}
+	public class B{
+		public static void main(String[] args){
+			A obj = new A();
+	}
+}
+		
+}	
+
+#Default Access Modifier
+
+// Program1
+package p1;
+
+
+class A
+{
+	void display()
+	{
+		System.out.println("Hello World!");
+	}
+}
+
+#Program2
+package p2;
+import p1.*;
+
+
+class ANew
+{
+	public static void main(String args[])
+	{
+		
+    A obj = new B();
+
+		obj.display();
+	}
+}
+
+#Protected Access Modifier
+
+//Program1
+package pack;  
+public class A{  
+protected void msg(){System.out.println("Hello World!");
+}  
+}
+
+//Program2
+
+package mypack;  
+import pack.*;  
+  
+class B extends A{  
+  public static void main(String args[]){  
+   B obj = new B();  
+   obj.msg();  
+  }  
+}
+
+#Public Access Modifier
+
+//Program1
+
+package p1;
+public class A
+{
+public void display()
+	{
+		System.out.println("Hello World!");
+	}
+}
+
+//Program2
+
+package p2;
+import p1.*;
+class B {
+	public static void main(String args[])
+	{
+		A obj = new A();
+		obj.display();
+	}
+}
+
+
+
+
