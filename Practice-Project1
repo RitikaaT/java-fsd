@@ -1,0 +1,17 @@
+class Implicit{
+	public static void main(String[] args) {
+		int num = 70;
+		System.out.println("The integer value: " +num);
+		double d = num;
+		System.out.println("The double value:" + d);
+	}
+}
+
+class Explicit{
+	public static void main(String[] args) {
+		double num = 99.99;
+		System.out.println("The double value:" +num);
+		int d = (int)num;
+		System.out.println("The integer value:" + d);
+	}	
+}
