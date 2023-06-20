@@ -1,0 +1,12 @@
+import java.util.regex.Pattern;
+class Main {
+
+	public static void main(String args[])
+	{
+
+		System.out.println(Pattern.matches(
+			"Dam*nSalvatore", "DamonSalvatore"));
+		System.out.println(
+			Pattern.matches("D*damon*", "DamonS"));
+	}
+}
