@@ -1,0 +1,16 @@
+//inheritance-pillar of java
+
+class Drinks{
+	protected String brand = "Thumbs up";
+	public void soda(){
+		System.out.println("fizz....");
+	}
+}
+class CoolDrink extends Drinks{
+	private String brandName = "Coco cola";
+	public static void main(String [] args){
+		CoolDrink myCoolDrink = new CoolDrink();
+		myCoolDrink.soda();
+		System.out.println(myCoolDrink.brand + " " +myCoolDrink.brandName);
+	}
+} 
