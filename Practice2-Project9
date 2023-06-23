@@ -1,0 +1,23 @@
+interface MyInterface_1{
+   public static int num = 100;
+   public default void display() {
+      System.out.println("display MyInterface_1");
+   }
+}
+interface MyInterface_2{
+   public static int num = 1000;
+   public default void display() {
+      System.out.println("display MyInterface_2");
+   }
+}
+public class Interface_0 implements MyInterface_1, MyInterface_2{
+   public void display() {
+      MyInterface_1.super.display();
+      //or,
+      MyInterface_2.super.display();
+   }
+   public static void main(String args[]) {
+      Interface_0 obj = new Interface_0();
+      obj.display();
+   }
+}
