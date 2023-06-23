@@ -1,0 +1,38 @@
+//extending the thread
+
+class MyThread extends Thread{
+	public void run(){
+		System.out.println("The thread is running....");
+		for(int j=1; j<=20; j++){
+			System.out.println("j = " + j);
+		}
+	}
+}
+
+public class My_Thread_1{
+	public static void main(String [ ] args){
+		MyThread t1 = new MyThread();
+		System.out.println("The thread is about to start....");
+		t1.start();
+	}
+}
+
+//implementing runnable interface
+
+class MyThread implements Runnable{
+	public void run(){
+		System.out.println("The thread is under running....");
+		for(int j = 1;j<=20; j++){
+			System.out.println("j= " +j);
+		}
+	}
+}
+
+public class My_Thread_2{
+	public static void main (String [] args){
+		MyThread threadObject = new MyThread();
+		Thread thread = new Thread(threadObject);
+		System.out.println("The thread is about to start....");
+		thread.start();
+	}
+}
