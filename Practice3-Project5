@@ -1,0 +1,21 @@
+void pop_first(int key) {     
+  Node temp = head;
+  if(temp != null) {
+       if(temp.data == key) {
+   	   Node nodeToDelete = head;
+   	   head = head.next;
+      	   nodeToDelete = null;
+    	} 
+	else {
+      	while(temp.next != null) {
+        	if(temp.next.data == key) {
+          	Node nodeToDelete = temp.next;
+          	temp.next = temp.next.next;
+          	nodeToDelete = null;
+          	break; 
+        }
+        temp = temp.next;
+      }
+    }
+  }
+} 
